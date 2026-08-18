@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    system-ui, 'Segoe UI', Roboto, sans-serif;
+  --color-ink: #1c1917;
+  --color-brand: #c2410c;
+  --color-brand-dark: #9a3412;
+  --color-brand-light: #fff7ed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+}
