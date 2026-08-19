@@ -1,33 +1,31 @@
-import { company } from '../content/company'
+import { company, hero } from '../content/company'
+import { PhoneIcon } from './icons'
 
 export function Hero() {
   return (
-    <section id="top" className="border-b border-stone-200 bg-brand-light">
+    <section id="top" className="border-b border-navy-light bg-navy">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
         <div>
-          <p className="mb-4 inline-flex items-center rounded-full bg-white px-3 py-1 text-sm font-medium text-brand-dark shadow-sm ring-1 ring-stone-200">
-            Transport & Umzug in Wien
+          <p className="mb-4 inline-flex items-center rounded-full bg-navy-light px-3 py-1 text-sm font-medium text-brand ring-1 ring-white/10">
+            {hero.eyebrow}
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl">
-            {company.tagline}
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            {hero.headline}
           </h1>
-          <p className="mt-6 text-lg text-stone-600">
-            Von der spontanen Kleintransport-Fahrt bis zum kompletten Wohnungsumzug –{' '}
-            {company.name} bringt Ihr Hab und Gut sicher, schnell und zu fairen Preisen an sein
-            Ziel.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <p className="mt-6 text-lg text-stone-300">{hero.subheadline}</p>
+          <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#kontakt"
-              className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-dark"
+              className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-navy shadow-sm transition hover:bg-brand-dark"
             >
-              Kostenlose Anfrage stellen
+              Kostenloses Angebot anfordern
             </a>
             <a
-              href="#leistungen"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-stone-800 ring-1 ring-stone-300 transition hover:bg-stone-50"
+              href={company.phoneHref}
+              className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/20 transition hover:bg-white/15"
             >
-              Leistungen ansehen
+              <PhoneIcon className="h-4 w-4" />
+              {company.phone}
             </a>
           </div>
         </div>
@@ -39,9 +37,12 @@ export function Hero() {
             ['ab €40', 'Möbelmontage pro Stück'],
             ['Wien', 'Ihr lokaler Partner'],
           ].map(([stat, label]) => (
-            <div key={label} className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-stone-200">
-              <p className="text-2xl font-bold text-brand-dark">{stat}</p>
-              <p className="mt-1 text-sm text-stone-600">{label}</p>
+            <div
+              key={label}
+              className="rounded-2xl bg-navy-light p-5 shadow-sm ring-1 ring-white/10"
+            >
+              <p className="text-2xl font-bold text-brand">{stat}</p>
+              <p className="mt-1 text-sm text-stone-300">{label}</p>
             </div>
           ))}
         </div>

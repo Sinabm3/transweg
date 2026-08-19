@@ -4,9 +4,11 @@
   --font-sans:
     system-ui, 'Segoe UI', Roboto, sans-serif;
   --color-ink: #1c1917;
-  --color-brand: #c2410c;
-  --color-brand-dark: #9a3412;
-  --color-brand-light: #fff7ed;
+  --color-brand: #c9a227;
+  --color-brand-dark: #a3821e;
+  --color-brand-light: #faf6ea;
+  --color-navy: #101d3a;
+  --color-navy-light: #1b2c52;
 }
 
 html {

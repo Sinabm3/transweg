@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { submitContact } from '../api/contact'
 import { company } from '../content/company'
-import { MapPinIcon } from './icons'
+import { MapPinIcon, PhoneIcon } from './icons'
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
@@ -38,9 +38,17 @@ export function ContactForm() {
           </p>
 
           <div className="mt-6 flex items-start gap-3 text-sm text-stone-600">
-            <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
+            <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-dark" />
             <span>{company.address}</span>
           </div>
+
+          <a
+            href={company.phoneHref}
+            className="mt-3 flex items-center gap-3 text-sm font-medium text-stone-700 hover:text-brand-dark"
+          >
+            <PhoneIcon className="h-5 w-5 shrink-0 text-brand-dark" />
+            <span>{company.phone}</span>
+          </a>
         </div>
 
         <form
@@ -88,7 +96,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="mt-6 w-full rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-6 w-full rounded-full bg-brand px-6 py-3 text-sm font-semibold text-navy transition hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-60"
           >
             {status === 'sending' ? 'Wird gesendet …' : 'Nachricht senden'}
           </button>

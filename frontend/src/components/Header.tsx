@@ -1,4 +1,4 @@
-import { TruckIcon } from './icons'
+import { BrandMark } from './icons'
 import { company } from '../content/company'
 
 const links = [
@@ -10,16 +10,21 @@ const links = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-stone-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-navy-light bg-navy/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#top" className="flex items-center gap-2 font-semibold text-stone-900">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white">
-            <TruckIcon className="h-5 w-5" />
+        <a href="#top" className="flex items-center gap-2.5">
+          <BrandMark className="h-8 w-8" />
+          <span className="leading-tight">
+            <span className="block text-lg font-bold tracking-wide text-white">
+              {company.name.toUpperCase()}
+            </span>
+            <span className="block text-[10px] font-medium tracking-[0.2em] text-brand">
+              TRANSPORT
+            </span>
           </span>
-          {company.name}
         </a>
 
-        <nav className="hidden gap-8 text-sm font-medium text-stone-600 sm:flex">
+        <nav className="hidden gap-8 text-sm font-medium text-stone-300 sm:flex">
           {links.map((link) => (
             <a key={link.href} href={link.href} className="transition hover:text-brand">
               {link.label}
@@ -29,7 +34,7 @@ export function Header() {
 
         <a
           href="#kontakt"
-          className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-dark"
+          className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-navy transition hover:bg-brand-dark"
         >
           Anfrage senden
         </a>

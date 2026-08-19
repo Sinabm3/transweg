@@ -1,12 +1,20 @@
 export const company = {
   name: 'Transweg',
-  tagline: 'Transport, Umzug & Montage in Wien',
+  legalName: 'Transweg Transport',
+  tagline: 'Ihr Weg, unsere Mission',
   owner: 'Danial',
   // TODO: confirm postal code / district for the address before going live.
   address: 'Lerchenfelder Straße 16, Wien',
   email: 'sinabm3@gmail.com',
-  // TODO: add a real phone number once available.
-  phone: undefined as string | undefined,
+  phone: '0681 10802557',
+  phoneHref: 'tel:+4368110802557',
+}
+
+export const hero = {
+  eyebrow: 'Transport & Umzug in Wien',
+  headline: 'Wir bewegen, was zählt.',
+  subheadline:
+    'Zuverlässige und professionelle Transportlösungen für Ihr Zuhause, Ihr Unternehmen und darüber hinaus.',
 }
 
 export type Service = {
@@ -90,15 +98,31 @@ export type Value = {
 
 export const values: Value[] = [
   {
-    title: 'Faire Preise',
-    description: 'Transparente Kostenvoranschläge, keine versteckten Gebühren.',
+    title: 'Sicher & Zuverlässig',
+    description: 'Ihre Güter in sicheren Händen.',
   },
   {
-    title: 'Schnelligkeit',
-    description: 'Wir wissen, dass Ihre Zeit wertvoll ist, und halten vereinbarte Termine ein.',
+    title: 'Schnell & Effizient',
+    description: 'Pünktlich, jedes Mal.',
   },
   {
-    title: 'Sorgfalt',
-    description: 'Ihr Hab und Gut wird bei uns mit Umsicht und Erfahrung behandelt.',
+    title: 'Vertrauensvoll',
+    description: 'Wir liefern Vertrauen, nicht nur Fracht.',
   },
+  {
+    title: '24/7 Kundenservice',
+    description: 'Wir sind rund um die Uhr für Sie da.',
+  },
+]
+
+export type FooterCategory = {
+  title: string
+  subtitle: string
+}
+
+export const footerCategories: FooterCategory[] = [
+  { title: 'Umzüge', subtitle: 'Privat & Gewerblich' },
+  { title: 'National &', subtitle: 'International' },
+  { title: 'Verpackung &', subtitle: 'Lagerung' },
+  { title: 'Versicherte', subtitle: 'Transporte' },
 ]

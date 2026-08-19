@@ -18,13 +18,13 @@ export function Pricing() {
               key={plan.title}
               className={`flex flex-col rounded-2xl p-6 ${
                 plan.featured
-                  ? 'bg-brand text-white shadow-lg ring-1 ring-brand-dark'
+                  ? 'bg-navy text-white shadow-lg ring-1 ring-navy-light'
                   : 'bg-white ring-1 ring-stone-200'
               }`}
             >
               <h3
                 className={`text-sm font-semibold uppercase tracking-wide ${
-                  plan.featured ? 'text-orange-100' : 'text-stone-500'
+                  plan.featured ? 'text-brand' : 'text-stone-500'
                 }`}
               >
                 {plan.title}
@@ -33,13 +33,13 @@ export function Pricing() {
                 {plan.price}
                 {plan.unit && (
                   <span
-                    className={`text-base font-medium ${plan.featured ? 'text-orange-100' : 'text-stone-500'}`}
+                    className={`text-base font-medium ${plan.featured ? 'text-stone-300' : 'text-stone-500'}`}
                   >
                     {plan.unit}
                   </span>
                 )}
               </p>
-              <p className={`mt-3 text-sm ${plan.featured ? 'text-orange-50' : 'text-stone-600'}`}>
+              <p className={`mt-3 text-sm ${plan.featured ? 'text-stone-300' : 'text-stone-600'}`}>
                 {plan.description}
               </p>
             </div>

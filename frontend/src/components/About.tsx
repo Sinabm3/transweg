@@ -26,12 +26,10 @@ export function About() {
           </div>
         </div>
 
-        <div className="rounded-2xl bg-brand p-8 text-white sm:p-10">
-          <p className="text-sm font-semibold uppercase tracking-wide text-orange-100">
-            Inhaber
-          </p>
+        <div className="rounded-2xl bg-navy p-8 text-white sm:p-10">
+          <p className="text-sm font-semibold uppercase tracking-wide text-brand">Inhaber</p>
           <p className="mt-2 text-2xl font-bold">{company.owner}</p>
-          <p className="mt-4 text-orange-50">
+          <p className="mt-4 text-stone-300">
             "Mir ist wichtig, dass sich unsere Kunden bei jedem Schritt gut aufgehoben fühlen –
             von der ersten Anfrage bis zum letzten Karton."
           </p>
