@@ -1,5 +1,6 @@
 import { About } from './components/About'
 import { ContactForm } from './components/ContactForm'
+import { Fleet } from './components/Fleet'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
@@ -15,6 +16,7 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Fleet />
         <Pricing />
         <WhyUs />
         <ContactForm />
