@@ -6,13 +6,13 @@ export function About() {
   return (
     <section id="ueber-uns" className="border-y border-stone-200 bg-stone-50">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <img
-            src={vanLoading}
-            alt={`${company.name} beim Beladen eines Transporters`}
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-sm"
-          />
+        <img
+          src={vanLoading}
+          alt={`${company.name} beim Beladen eines Transporters`}
+          className="aspect-[16/9] w-full rounded-2xl object-cover shadow-sm"
+        />
 
+        <div className="mt-10 grid gap-10 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold text-stone-900">Über uns</h2>
             <p className="mt-4 text-stone-600">
@@ -24,13 +24,13 @@ export function About() {
               Wir behandeln jeden Auftrag mit der gleichen Sorgfalt, mit der wir unsere eigenen
               Sachen transportieren würden.
             </p>
+          </div>
 
-            <div className="mt-6 flex items-start gap-3 rounded-xl bg-white p-4 ring-1 ring-stone-200">
-              <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
-              <div>
-                <p className="font-medium text-stone-900">{company.name}</p>
-                <p className="text-sm text-stone-600">{company.address}</p>
-              </div>
+          <div className="flex items-start gap-3 rounded-xl bg-white p-4 ring-1 ring-stone-200 lg:self-start">
+            <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
+            <div>
+              <p className="font-medium text-stone-900">{company.name}</p>
+              <p className="text-sm text-stone-600">{company.address}</p>
             </div>
           </div>
         </div>
