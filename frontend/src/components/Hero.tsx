@@ -35,7 +35,7 @@ export function Hero() {
             ['ab €40', 'Transport pro Stunde'],
             ['ab €399', 'Kompletter Wohnungsumzug'],
             ['ab €40', 'Möbelmontage pro Stück'],
-            ['Wien', 'Ihr lokaler Partner'],
+            ['Österreich', 'Inland & Ausland'],
           ].map(([stat, label]) => (
             <div
               key={label}

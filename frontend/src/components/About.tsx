@@ -16,7 +16,8 @@ export function About() {
           <div>
             <h2 className="text-3xl font-bold text-stone-900">Über uns</h2>
             <p className="mt-4 text-stone-600">
-              {company.name} ist Ihr Partner für Transport, Umzüge und Montage in Wien. Gegründet
+              {company.name} ist Ihr Partner für Transport, Umzüge und Montage in ganz Österreich –
+              Inland und Ausland. Gegründet
               von {company.owner}, steht das Unternehmen für persönlichen Kontakt, saubere Arbeit
               und faire Preise – egal ob es um einen einzelnen Karton oder eine ganze Wohnung geht.
             </p>

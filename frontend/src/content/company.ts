@@ -2,16 +2,15 @@ export const company = {
   name: 'Transweg',
   legalName: 'Transweg Transport',
   tagline: 'Ihr Weg, unsere Mission',
-  owner: 'Danial',
-  // TODO: confirm postal code / district for the address before going live.
-  address: 'Lerchenfelder Straße 16, Wien',
+  owner: 'Danial Nabhan',
+  address: 'Lerchenfelderstraße 18, 3500 Krems',
   email: 'sinabm3@gmail.com',
   phone: '0681 10802557',
   phoneHref: 'tel:+4368110802557',
 }
 
 export const hero = {
-  eyebrow: 'Transport & Umzug in Wien',
+  eyebrow: 'Umzugsfirma in Österreich – Inland & Ausland',
   headline: 'Wir bewegen, was zählt.',
   subheadline:
     'Zuverlässige und professionelle Transportlösungen für Ihr Zuhause, Ihr Unternehmen und darüber hinaus.',
@@ -70,7 +69,7 @@ export const pricingPlans: PricingPlan[] = [
     title: 'Transport',
     price: 'ab €40',
     unit: '/Std.',
-    description: 'Kleintransporte, Lastentaxi & Express-Fahrten in Wien.',
+    description: 'Kleintransporte, Lastentaxi & Express-Fahrten in ganz Österreich.',
   },
   {
     title: 'Privatumzug',

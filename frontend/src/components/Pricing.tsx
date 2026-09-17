@@ -47,7 +47,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-sm text-stone-500">
-          Alle Preise verstehen sich als Richtwerte in Wien und können je nach Aufwand,
+          Alle Preise verstehen sich als Richtwerte in Österreich und können je nach Aufwand,
           Entfernung und Umfang variieren.
         </p>
       </div>
