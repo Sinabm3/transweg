@@ -11,6 +11,7 @@ services:
       MAIL_FROM: ${MAIL_FROM}
       CONTACT_RECIPIENT_EMAIL: ${CONTACT_RECIPIENT_EMAIL:-nabhandanial@gmail.com}
       FRONTEND_ORIGIN: ${FRONTEND_ORIGIN:-http://localhost:5173}
+      REVIEWS_ADMIN_TOKEN: ${REVIEWS_ADMIN_TOKEN}
     volumes:
       - reviews-data:/data/reviews
     restart: unless-stopped
