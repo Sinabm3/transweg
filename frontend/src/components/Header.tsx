@@ -5,6 +5,7 @@ const links = [
   { href: '#leistungen', label: 'Leistungen' },
   { href: '#preise', label: 'Preise' },
   { href: '#ueber-uns', label: 'Über uns' },
+  { href: '#bewertungen', label: 'Bewertungen' },
   { href: '#kontakt', label: 'Kontakt' },
 ]
 

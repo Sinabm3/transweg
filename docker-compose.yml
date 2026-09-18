@@ -9,8 +9,10 @@ services:
       MAIL_USERNAME: ${MAIL_USERNAME}
       MAIL_PASSWORD: ${MAIL_PASSWORD}
       MAIL_FROM: ${MAIL_FROM}
-      CONTACT_RECIPIENT_EMAIL: ${CONTACT_RECIPIENT_EMAIL:-sinabm3@gmail.com}
+      CONTACT_RECIPIENT_EMAIL: ${CONTACT_RECIPIENT_EMAIL:-nabhandanial@gmail.com}
       FRONTEND_ORIGIN: ${FRONTEND_ORIGIN:-http://localhost:5173}
+    volumes:
+      - reviews-data:/data/reviews
     restart: unless-stopped
 
   frontend:
@@ -22,3 +24,6 @@ services:
     depends_on:
       - backend
     restart: unless-stopped
+
+volumes:
+  reviews-data:
