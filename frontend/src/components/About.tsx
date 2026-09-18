@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import vanLoading from '../assets/van-loading.jpg'
 import { company } from '../content/company'
 import { MapPinIcon } from './icons'
@@ -25,6 +26,13 @@ export function About() {
               Wir behandeln jeden Auftrag mit der gleichen Sorgfalt, mit der wir unsere eigenen
               Sachen transportieren würden.
             </p>
+
+            <Link
+              to="/kontakt"
+              className="mt-6 inline-flex items-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-navy transition hover:bg-brand-dark"
+            >
+              Jetzt Kontakt aufnehmen
+            </Link>
           </div>
 
           <div className="flex items-start gap-3 rounded-xl bg-white p-4 ring-1 ring-stone-200 lg:self-start">

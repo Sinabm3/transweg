@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { company, hero } from '../content/company'
 import { PhoneIcon } from './icons'
 
@@ -14,12 +15,12 @@ export function Hero() {
           </h1>
           <p className="mt-6 text-lg text-stone-300">{hero.subheadline}</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#kontakt"
+            <Link
+              to="/kontakt"
               className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-navy shadow-sm transition hover:bg-brand-dark"
             >
               Kostenloses Angebot anfordern
-            </a>
+            </Link>
             <a
               href={company.phoneHref}
               className="flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/20 transition hover:bg-white/15"

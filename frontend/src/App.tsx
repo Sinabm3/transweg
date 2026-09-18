@@ -1,30 +1,23 @@
-import { About } from './components/About'
-import { ContactForm } from './components/ContactForm'
-import { Fleet } from './components/Fleet'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Pricing } from './components/Pricing'
-import { Reviews } from './components/Reviews'
-import { Services } from './components/Services'
-import { WhyUs } from './components/WhyUs'
+import { ContactPage } from './pages/ContactPage'
+import { HomePage } from './pages/HomePage'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-stone-900">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Fleet />
-        <Pricing />
-        <WhyUs />
-        <Reviews />
-        <ContactForm />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-white text-stone-900">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/kontakt" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 
